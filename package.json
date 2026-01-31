@@ -1,11 +1,15 @@
 {
-  "name": "sso-sdk",
+  "name": "@tu-org/sso-sdk",
   "version": "0.1.1",
   "description": "SDK para SSO de BIGSO",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "author": "Big Solutions",

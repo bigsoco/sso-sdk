@@ -1,9 +1,9 @@
-name: Publish Package
-
 on:
   push:
     branches:
       - main
+
+name: Publish SDK to npm
 
 jobs:
   publish:
@@ -21,6 +21,9 @@ jobs:
 
       - name: Install deps
         run: npm ci
+
+      - name: Build
+        run: npm run build
 
       - name: Publish
         run: npm publish --access public

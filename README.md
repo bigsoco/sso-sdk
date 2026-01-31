@@ -62,4 +62,33 @@ if (tokenResult.success) {
 - `validateSessionToken(sessionToken)` — Validar sesión de usuario (backend)
 - `exchangeAuthCode(code)` — Intercambiar código de autorización por token de sesión
 
+## Publicación y releases (npm production-ready)
+
+Este SDK está preparado para publicación profesional en npm:
+
+- Solo se publica el código compilado (`dist`), nunca el TypeScript fuente.
+- El pipeline de CI publica automáticamente al crear un tag `v*` en el repositorio.
+- El secret de autenticación debe llamarse `NPM_TOKEN` y ser un Automation Token de npm.
+- El lockfile (`package-lock.json`) debe estar versionado.
+
+### Proceso de release
+
+1. Cambia la versión:
+
+```bash
+npm version patch # o minor/major
+```
+
+2. Haz push con tags:
+
+```bash
+git push --follow-tags
+```
+
+3. El pipeline compilará y publicará automáticamente a npm.
+
+El paquete se publica bajo el scope organizacional: `@tu-org/sso-sdk`.
+
+---
+
 Próximamente: gestión de permisos, usuarios, integración avanzada.
