@@ -1,5 +1,5 @@
 {
-  "name": "@bigsoco/sso-sdk",
+  "name": "@bigso/sso-sdk",
   "version": "0.1.2",
   "description": "SDK para SSO de BIGSO",
   "main": "dist/index.js",
