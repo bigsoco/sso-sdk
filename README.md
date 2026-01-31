@@ -1,13 +1,19 @@
-npm install sso-app-sdk
-
-# sso-app-sdk
+# @bigsoco/sso-sdk
 
 SDK TypeScript para registrar recursos, acciones y gestionar sesiones/autenticación de aplicaciones con el backend SSO de EmpireSoft.
 
 ## Instalación
 
+Instalar desde la línea de comandos:
+
+```sh
+$ npm install @bigsoco/sso-sdk@0.1.4
 ```
-npm install sso-app-sdk
+
+O agregar en tu `package.json`:
+
+```json
+"@bigsoco/sso-sdk": "0.1.4"
 ```
 
 ## Uso básico: Registro de recursos
